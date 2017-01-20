@@ -20,6 +20,10 @@ router.get("/contact",function(req,res){
   res.sendFile(path + "contact.html");
 });
 
+router.get("/eligible",function(req,res){
+  res.sendFile(path + "eligible.html");
+});
+
 app.use("/",router);
 
 app.use("*",function(req,res){
