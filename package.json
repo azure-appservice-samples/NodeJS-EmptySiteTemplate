@@ -5,6 +5,12 @@
     "start" : "node Server.js"
   },
   "dependencies" : {
-    "express" : "latest"
+    "express" : "latest",
+    "body-parser" : "latest",
+    "cookie-parser" : "latest",
+    "multer" : "latest",
+    "ejs" : "latest",
+    "eligible-node" : "latest",
+    "express-basic-auth" : "latest"
   }
 }
