@@ -24,6 +24,10 @@ router.get("/eligible",function(req,res){
   res.sendFile(path + "eligible.html");
 });
 
+router.get("/eligiblecoverage",function(req,res){
+  res.sendFile(path + "eligiblecoverage.html");
+});
+
 app.use("/",router);
 
 app.use("*",function(req,res){
