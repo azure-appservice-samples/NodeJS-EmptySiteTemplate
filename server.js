@@ -32,13 +32,8 @@ router.get("/eligiblecoverage",function(req,res){
   res.sendFile(path + "eligiblecoverage.html");
 });
 
-//include main.js
-<<<<<<< HEAD
+// include model/main
 require('./model/main')(app);
-=======
-//var urlencodedParser = bodyParser.urlencoded({ extended: false })
-//require('./model/main')(app, urlencodedParser);
->>>>>>> origin/master
 
 app.use("/",router);
 
