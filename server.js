@@ -28,6 +28,10 @@ router.get("/eligiblecoverage",function(req,res){
   res.sendFile(path + "eligiblecoverage.html");
 });
 
+router.get("/test",function(req,res){
+  res.sendFile(path + "test.html");
+});
+
 // include model/main
 require('./model/main')(app);
 
