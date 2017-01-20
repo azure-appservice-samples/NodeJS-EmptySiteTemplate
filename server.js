@@ -31,10 +31,10 @@ router.get("/eligiblecoverage",function(req,res){
 router.get("/test",function(req,res){
   res.sendFile(path + "test.html");
 });
- 
+
 // include model/main
 require('./model/main')(app);
-
+app.use(express.static('public'))
 app.use("/",router);
 
 app.use("*",function(req,res){
