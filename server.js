@@ -1,5 +1,4 @@
 var express = require("express");
-var bodyParser = require("body-parser");
 var app = express();
 var router = express.Router();
 var path = __dirname + '/views/';
@@ -30,8 +29,8 @@ router.get("/eligiblecoverage",function(req,res){
 });
 
 //include main.js
-var urlencodedParser = bodyParser.urlencoded({ extended: false })
-require('./model/main')(app, urlencodedParser);
+//var urlencodedParser = bodyParser.urlencoded({ extended: false })
+//require('./model/main')(app, urlencodedParser);
 
 app.use("/",router);
 
