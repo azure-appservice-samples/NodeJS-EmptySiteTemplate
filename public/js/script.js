@@ -22,7 +22,7 @@ $(window).load(function(){
     plugin.addGenericServices();
 
 
-    $('body').append(plugin.coverageSection);
+    $('#eligibleContent').append(plugin.coverageSection);
     };
 
     buildCoverageHTML(coverage);
