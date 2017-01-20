@@ -1,4 +1,4 @@
-module.exports = function(app, urlencodedParser)
+module.exports = function(app)
 {   var Eligible = require('eligible-node');
 
 
@@ -7,16 +7,12 @@ module.exports = function(app, urlencodedParser)
         apiKey: 'SbdQJVVtHq_cphPqloPIMgfqGMt8XewHM-Ka',
         isTest: true
     });
-     app.get('/',function(req,res){
-
-        res.render('index.html')
-     });
-     app.post('/homepage',urlencodedParser,function(req,res){
+  /*   app.post('/homepage',urlencodedParser,function(req,res){
         var username = req.body.uname;
         console.log(username)
         res.render('homepage',{uname:username})
-     });
-     app.get('/mytabledata',urlencodedParser,function(req,res){
+  */   });
+     app.get('/mytabledata',function(req,res){
        eligible.Payer.all({
          endpoint: 'coverage',
       }).then(function(payers) {
