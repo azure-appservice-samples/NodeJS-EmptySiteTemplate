@@ -1,5 +1,8 @@
 var express = require("express");
+<<<<<<< HEAD
 //var bodyParser = require("body-parser");
+=======
+>>>>>>> origin/master
 var app = express();
 var router = express.Router();
 var path = __dirname + '/views/';
@@ -30,7 +33,12 @@ router.get("/eligiblecoverage",function(req,res){
 });
 
 //include main.js
+<<<<<<< HEAD
 require('./model/main')(app);
+=======
+//var urlencodedParser = bodyParser.urlencoded({ extended: false })
+//require('./model/main')(app, urlencodedParser);
+>>>>>>> origin/master
 
 app.use("/",router);
 
