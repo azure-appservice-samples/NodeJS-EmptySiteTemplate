@@ -1,0 +1,36 @@
+<html>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+
+  function myCall(site) {
+      var request = $.ajax({
+          url: site,
+          type: "GET",
+          dataType: "html"
+      });
+
+      request.done(function(msg) {
+           alert(msg)
+           $("#data").append(msg);
+       });
+       request.fail(function(jqXHR, textStatus) {
+    alert( "Request failed: " + textStatus );
+});
+}
+</script>
+   <head>
+      <title>Welcome to Health 101</title>
+      <h1>Welcome to Healthcare Helper <%= uname %></h1>
+   </head>
+
+   <body>
+     <button type="submit" onclick="myCall('/mytabledata');" method = "GET">View Payers</button>
+     <p id = "data"></p>
+     <table id="payers" border='1'>
+        <tr>
+            <th>Names</th>
+             <th>Status</th>
+        </tr>
+    </table>
+   </body>
+</html>

@@ -29,7 +29,7 @@ router.get("/eligiblecoverage",function(req,res){
 });
 
 // include model/main
-//require('./model/main')(app);
+require('./model/main')(app);
 
 app.use("/",router);
 

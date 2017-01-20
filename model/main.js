@@ -11,7 +11,7 @@ module.exports = function(app)
         var username = req.body.uname;
         console.log(username)
         res.render('homepage',{uname:username})
-  */   });
+     });*/
      app.get('/mytabledata',function(req,res){
        eligible.Payer.all({
          endpoint: 'coverage',
