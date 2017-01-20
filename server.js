@@ -28,6 +28,10 @@ router.get("/eligiblecoverage",function(req,res){
   res.sendFile(path + "eligiblecoverage.html");
 });
 
+//include main.js
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
+require('./model/main')(app, urlencodedParser);
+
 app.use("/",router);
 
 app.use("*",function(req,res){
