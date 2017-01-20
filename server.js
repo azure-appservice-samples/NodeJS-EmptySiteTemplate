@@ -1,8 +1,4 @@
 var express = require("express");
-<<<<<<< HEAD
-//var bodyParser = require("body-parser");
-=======
->>>>>>> origin/master
 var app = express();
 var router = express.Router();
 var path = __dirname + '/views/';
