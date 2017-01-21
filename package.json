@@ -1,12 +1,16 @@
 {
-  "name": "application-name",
-  "version": "2.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node server"
-  },  
-"license": "Apache",
-"engines": {
-    "node": "~0.10.0 || ~4.2.0"
+  "name" : "pnccare",
+  "version" : "0.0.1",
+  "scripts" : {
+    "start" : "node Server.js"
+  },
+  "dependencies" : {
+    "express" : "latest",
+    "body-parser" : "latest",
+    "cookie-parser" : "latest",
+    "multer" : "latest",
+    "ejs" : "latest",
+    "eligible-node" : "latest",
+    "express-basic-auth" : "latest"
   }
 }
