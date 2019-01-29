@@ -1,12 +1,16 @@
 {
-  "name": "application-name",
-  "version": "2.0.0",
-  "private": true,
+  "name": "apiai-middleware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "start": "node server"
-  },  
-"license": "Apache",
-"engines": {
-    "node": "~0.10.0 || ~4.2.0"
-  }
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express":"*",
+    "body-parser":"*",
+    "apiai": "*"
+  },
+  "author": "",
+  "license": "ISC"
 }
